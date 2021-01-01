@@ -1,0 +1,63 @@
+$white: #fff; // - white
+$mid-green: #0aa32b; // - mid  green
+$orange: #ffa500; // orange
+$transparent: Transparent;
+$red: #ff0000; // red
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  label {
+    color: $white;
+    text-align: center;
+    padding: 5%;
+    display: block;
+  }
+}
+
+label {
+  color: $white;
+  text-align: center;
+  padding: 5%;
+  display: block;
+}
+
+.button-row {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  & button {
+    margin: 5px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: $white;
+  text-align: center;
+  padding: 2%;
+  opacity: 0.6;
+
+  & a {
+    color: $white;
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
+      padding-top: 2px;
+      margin-right: 5px;
+    }
+
+    p {
+      font-size: 8px;
+    }
+  }
+}

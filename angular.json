@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-internationalization"
+  "defaultProject": "angular-internationalization",
+  "cli": {
+    "analytics": "774eb790-cfee-4d78-939d-fcc4e9c941f1"
+  }
 }
