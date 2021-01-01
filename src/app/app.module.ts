@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocaleOptionComponent } from './locale-option/locale-option.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { CustomHttpLoadarFactory } from './shared';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,17 @@ import { LocaleOptionComponent } from './locale-option/locale-option.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSelectModule,
+    HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: CustomHttpLoadarFactory,
+        deps: [HttpClient]
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
