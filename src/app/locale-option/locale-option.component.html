@@ -1,0 +1,27 @@
+<div class="main">
+  <label style="font-size: 1.5rem">{{ title }}</label>
+  <div class="flex-end">
+    <mat-form-field appearance="fill">
+      <mat-label>Select Locale</mat-label>
+      <mat-select [formControl]="languageControl">
+        <mat-option> </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-flex">
+    <a
+      href="https://github.com/chandru415/angular-ngrx-material-snackbar"
+      target="_blank"
+      title="View Source Code"
+    >
+      <i class="fa fa-github" aria-hidden="true"></i
+    ></a>
+    <p>
+      chandru415 @ 2021 -
+      {{ copyright$ | async | date: "yyyy" }} MIT.
+    </p>
+  </div>
+</footer>
