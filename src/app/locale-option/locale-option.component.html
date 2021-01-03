@@ -16,14 +16,33 @@
       {{ "intro" | translate }}
     </p>
   </div>
-
-
+  <!-- Using NgFor/loop -->
+  <div class="block">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <div class="flex-between">
+          <div class="">Default English</div>
+          <div class="">Translate Language</div>
+        </div>
+      </mat-list-item>
+      <mat-list-item role="listitem" *ngFor="let month of months">
+        <div class="flex-between">
+          <div class="">
+            {{ month }}
+          </div>
+          <div class="">
+            {{ "months." + month | translate }}
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
 </div>
 
 <footer class="footer">
   <div class="footer-flex">
     <a
-      href="https://github.com/chandru415/angular-ngrx-material-snackbar"
+      href="https://github.com/chandru415/angular-internationalization"
       target="_blank"
       title="View Source Code"
     >
@@ -32,6 +51,15 @@
     <p>
       chandru415 @ 2021 -
       {{ copyright$ | async | date: "yyyy" }} MIT.
+    </p>
+    <p>
+      <a
+        href="https://twitter.com/chandru415"
+        target="_blank"
+        title="View Source Code"
+      >
+        <i class="fa fa-twitter" aria-hidden="true"></i
+      ></a>
     </p>
   </div>
 </footer>

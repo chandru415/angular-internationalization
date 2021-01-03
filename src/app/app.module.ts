@@ -10,6 +10,7 @@ import { LocaleOptionComponent } from './locale-option/locale-option.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { CustomHttpLoadarFactory } from './shared';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CustomHttpLoadarFactory } from './shared';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
+    MatListModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

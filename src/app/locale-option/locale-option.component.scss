@@ -18,20 +18,25 @@ $white: #fff; // - white
 
   .block {
     margin: 1rem;
-    width: 100%;
     padding: 1rem;
+  }
+
+  .flex-between {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: space-around;
+    width: 50%;
   }
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   color: $white;
   text-align: center;
   padding: 2%;
   opacity: 0.6;
+  margin-top: 2rem;
 
   & a {
     color: $white;

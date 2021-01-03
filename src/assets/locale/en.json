@@ -1,4 +1,18 @@
 {
     "title": "Angular-Internationalization",
-    "intro": "Angular is an application design framework and development platform for creating efficient and sophisticated single-page applications"
+    "intro": "Angular is an application design framework and development platform for creating efficient and sophisticated single-page applications",
+    "months": {
+        "January": "January",
+        "February": "February",
+        "March": "March",
+        "April": "April",
+        "May": "May",
+        "June": "June",
+        "July": "July",
+        "August": "August",
+        "September": "September",
+        "October": "October",
+        "November": "November",
+        "December": "December"
+    }
 }

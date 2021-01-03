@@ -18,6 +18,21 @@ export class LocaleOptionComponent implements AfterViewInit, OnDestroy {
 
   languageControl = new FormControl('');
 
+  months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
   constructor(public translate: TranslateService) {}
 
   ngAfterViewInit(): void {
@@ -27,7 +42,7 @@ export class LocaleOptionComponent implements AfterViewInit, OnDestroy {
   }
 
   languageText = (locale: string): string =>
-    languages.find((l) => l.locale === locale)?.language as string
+    languages.find((l) => l.locale === locale)?.language as string;
 
   ngOnDestroy(): void {
     this.alive.next(undefined);
