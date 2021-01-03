@@ -29,7 +29,8 @@ import { CustomHttpLoadarFactory } from './shared';
         provide: TranslateLoader,
         useFactory: CustomHttpLoadarFactory,
         deps: [HttpClient]
-      }
+      },
+      defaultLanguage: `en`
     }),
   ],
   providers: [],
