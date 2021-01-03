@@ -3,7 +3,7 @@ $white: #fff; // - white
 .main {
   label {
     text-align: center;
-    padding: 5%;
+    padding: 3%;
     padding-bottom: 0%;
     margin-bottom: 1rem;
     display: block;
@@ -28,6 +28,15 @@ $white: #fff; // - white
     justify-content: space-around;
     width: 50%;
   }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  color: $white;
+  margin-right: .5rem;
 }
 
 .footer {

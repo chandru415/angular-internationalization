@@ -1,3 +1,21 @@
+<mat-toolbar  color="primary">
+  <span class="spacer"></span>
+  <a
+    href="https://github.com/chandru415/angular-internationalization"
+    target="_blank"
+    title="View Source Code"
+  >
+    <i class="fa fa-github fa-2x" aria-hidden="true"></i
+  ></a>
+  <a
+    href="https://twitter.com/chandru415"
+    target="_blank"
+    title="follow in twitter"
+  >
+    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+  ></a>
+</mat-toolbar>
+
 <div class="main">
   <label style="font-size: 1.5rem">{{ "title" | translate }}</label>
   <div class="flex-end">
@@ -41,25 +59,9 @@
 
 <footer class="footer">
   <div class="footer-flex">
-    <a
-      href="https://github.com/chandru415/angular-internationalization"
-      target="_blank"
-      title="View Source Code"
-    >
-      <i class="fa fa-github" aria-hidden="true"></i
-    ></a>
     <p>
       chandru415 @ 2021 -
       {{ copyright$ | async | date: "yyyy" }} MIT.
-    </p>
-    <p>
-      <a
-        href="https://twitter.com/chandru415"
-        target="_blank"
-        title="View Source Code"
-      >
-        <i class="fa fa-twitter" aria-hidden="true"></i
-      ></a>
     </p>
   </div>
 </footer>

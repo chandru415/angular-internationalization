@@ -11,6 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { CustomHttpLoadarFactory } from './shared';
 import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {MatListModule} from '@angular/material/list';
     ReactiveFormsModule,
     MatSelectModule,
     MatListModule,
+    MatToolbarModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
