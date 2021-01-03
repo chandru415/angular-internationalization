@@ -1,5 +1,5 @@
 <div class="main">
-  <label style="font-size: 1.5rem">{{ title }}</label>
+  <label style="font-size: 1.5rem">{{ "title" | translate }}</label>
   <div class="flex-end">
     <mat-form-field appearance="fill">
       <mat-label>Select Locale</mat-label>
@@ -10,6 +10,14 @@
       </mat-select>
     </mat-form-field>
   </div>
+  <!-- Normal text translation -->
+  <div class="block">
+    <p class="intro-text">
+      {{ "intro" | translate }}
+    </p>
+  </div>
+
+
 </div>
 
 <footer class="footer">
